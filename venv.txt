@@ -1,0 +1,17 @@
+How to use python venv under Linux
+
+Make sure you have a recent python3 version:
+      python --version
+      # If your python predates v3.3, you may need to manually install venv tool
+      sudo apt-get install python3-venv
+
+      sudo useradd -m hs4plotter
+      sudo su - hs4plotter
+      id
+      # Make sure you are running as the hs4plotter user!
+      cd
+      python3 -m venv venv
+      $HOME/venv/bin/pip install requests
+      $HOME/venv/bin/pip install  influxdb-client  #Optional
+      git clone https://github.com/Kv603/HS4plotter.git
+      $HOME/venv/bin/python3 HS4plotter/src/hs4plotter.py --help
