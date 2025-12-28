@@ -59,7 +59,7 @@ def sanitize_graph_name(name):
 
 def load_config():
     config = configparser.ConfigParser()
-    files = [Path("./iotplot.ini"), Path.home() / "iotplot.ini"]
+    files = [Path("./hs4plot.ini"), Path.home() / "hs4plot.ini", Path("./iotplot.ini"), Path.home() / "iotplot.ini"]
     for f in files:
         if f.exists():
             config.read(f)
